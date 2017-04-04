@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: bfb
+Build-Jdk: 1.8.0_73
+Created-By: Maven Integration for Eclipse
+Tapestry-Module-Classes: com.trsvax.graphql.services.GraphQLModule
+
