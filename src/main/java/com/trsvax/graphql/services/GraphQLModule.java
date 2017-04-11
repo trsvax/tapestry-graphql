@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 public class GraphQLModule {
 	
 	public static void bind(ServiceBinder binder) {
-		binder.bind(GraphQLContributeQuery.class,TapestryQuery.class).withId("TapestryQuery");
 	}
 	
 	public static GraphQLService buildGraphQLService(Logger logger,
