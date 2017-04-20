@@ -1,0 +1,162 @@
+EXCEPTION STACK:
+
+
+     Exception: org.apache.tapestry5.ioc.internal.OperationException
+       Message: Failure parsing template classpath:com/trsvax/graphql/pages/Index.tml: The element type "body" must be terminated by the matching end-tag "</body>".
+      location: classpath:com/trsvax/graphql/pages/Index.tml, line 6
+         trace: Handling page render request for page Index
+                Constructing instance of page class com.trsvax.graphql.pages.Index
+                Creating ComponentAssembler for com.trsvax.graphql.pages.Index
+                Parsing component template classpath:com/trsvax/graphql/pages/Index.tml
+
+     Exception: org.apache.tapestry5.ioc.internal.util.TapestryException
+       Message: Failure parsing template classpath:com/trsvax/graphql/pages/Index.tml: The element type "body" must be terminated by the matching end-tag "</body>".
+      location: classpath:com/trsvax/graphql/pages/Index.tml, line 6
+
+     Exception: org.xml.sax.SAXParseException
+       Message: The element type "body" must be terminated by the matching end-tag "</body>".
+  columnNumber: 3
+    lineNumber: 6
+
+  Stack trace:
+
+  - org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+  - org.apache.tapestry5.internal.services.XMLTokenStream.parse(XMLTokenStream.java:327)
+  - org.apache.tapestry5.internal.services.SaxTemplateParser.parse(SaxTemplateParser.java:170)
+  - org.apache.tapestry5.internal.services.TemplateParserImpl$1.invoke(TemplateParserImpl.java:61)
+  - org.apache.tapestry5.internal.services.TemplateParserImpl$1.invoke(TemplateParserImpl.java:58)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.services.TemplateParserImpl.parseTemplate(TemplateParserImpl.java:57)
+  - $TemplateParser_1e584ce37831.parseTemplate(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentTemplateSourceImpl.parseTemplate(ComponentTemplateSourceImpl.java:190)
+  - org.apache.tapestry5.internal.services.ComponentTemplateSourceImpl.getTemplate(ComponentTemplateSourceImpl.java:162)
+  - $ComponentTemplateSource_1e584ce37830.getTemplate(Unknown Source)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl$4.invoke(PageLoaderImpl.java:258)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl$4.invoke(PageLoaderImpl.java:251)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl.createAssembler(PageLoaderImpl.java:250)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl.getAssembler(PageLoaderImpl.java:240)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl$3.invoke(PageLoaderImpl.java:195)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl$3.invoke(PageLoaderImpl.java:190)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl.loadPage(PageLoaderImpl.java:189)
+  - $PageLoader_1e584ce3782c.loadPage(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageSourceImpl.getPage(PageSourceImpl.java:104)
+  - $PageSource_1e584ce3782b.getPage(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestPageCacheImpl.get(RequestPageCacheImpl.java:86)
+  - $RequestPageCache_1e584ce3782a.get(Unknown Source)
+  - $RequestPageCache_1e584ce37822.get(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderRequestHandlerImpl.handle(PageRenderRequestHandlerImpl.java:56)
+  - org.apache.tapestry5.modules.TapestryModule$34.handle(TapestryModule.java:1974)
+  - $PageRenderRequestHandler_1e584ce37829.handle(Unknown Source)
+  - $PageRenderRequestHandler_1e584ce37824.handle(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentRequestHandlerTerminator.handlePageRender(ComponentRequestHandlerTerminator.java:48)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.handlePageRender(DeferredResponseRenderer.java:52)
+  - $ComponentRequestHandler_1e584ce37825.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.services.InitializeActivePageName.handlePageRender(InitializeActivePageName.java:47)
+  - $ComponentRequestHandler_1e584ce37825.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.ProductionModeUnknownComponentFilter.handlePageRender(ProductionModeUnknownComponentFilter.java:62)
+  - $ComponentRequestHandler_1e584ce37825.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$2.run(RequestOperationTracker.java:73)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.run(OperationTrackerImpl.java:56)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.run(PerThreadOperationTracker.java:60)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.run(RegistryImpl.java:1254)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker.handlePageRender(RequestOperationTracker.java:66)
+  - $ComponentRequestHandler_1e584ce37825.handlePageRender(Unknown Source)
+  - $ComponentRequestHandler_1e584ce377fb.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderDispatcher.dispatch(PageRenderDispatcher.java:55)
+  - $Dispatcher_1e584ce377fd.dispatch(Unknown Source)
+  - $Dispatcher_1e584ce377f3.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_1e584ce377f4.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:846)
+  - $RequestHandler_1e584ce377f4.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:836)
+  - $RequestHandler_1e584ce377f4.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_1e584ce377f4.service(Unknown Source)
+  - $RequestHandler_1e584ce377ea.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_1e584ce377ec.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:62)
+  - $HttpServletRequestFilter_1e584ce377e7.service(Unknown Source)
+  - $HttpServletRequestHandler_1e584ce377ec.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:796)
+  - $HttpServletRequestHandler_1e584ce377ec.service(Unknown Source)
+  - $HttpServletRequestHandler_1e584ce377e6.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+  - org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+  - org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+  - org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:556)
+  - org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+  - org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+  - org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+  - org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+  - org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+  - org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+  - org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+  - org.eclipse.jetty.server.Server.handle(Server.java:369)
+  - org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+  - org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:933)
+  - org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:995)
+  - org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+  - org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+  - org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+  - org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:668)
+  - org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+  - org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+  - org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+  - java.lang.Thread.run(Thread.java:745)
+
+REQUEST:
+
+Basic Information:
+
+                contextPath: /graphql
+                     method: GET
+                       path: /
+                     locale: en_US
+                 serverName: localhost
+                 remoteHost: 0:0:0:0:0:0:0:1
+
+Headers:
+
+                     Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+            Accept-Encoding: gzip, deflate
+            Accept-Language: en-us
+                 Connection: keep-alive
+                     Cookie: _ga=GA1.1.1364435120.1478001579; _ga=GA1.1.1364435120.1478001579; jenkins-timestamper-offset=18000000
+                       Host: localhost:8080
+  Upgrade-Insecure-Requests: 1
+                 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.1 Safari/603.1.30
+
+SYSTEM INFORMATION:
+
+Memory:
+       68,640,144 bytes free
+      117,964,800 bytes total
+      954,728,448 bytes max
+
+13 Threads:
+                                              Reference Handler WAITING, daemon, priority 10
+                                                      Finalizer WAITING, daemon, priority 8
+                                              Signal Dispatcher RUNNABLE, daemon, priority 9
+                                         HashSessionScavenger-0 TIMED_WAITING, daemon
+  qtp984213526-11 Acceptor0 SelectChannelConnector@0.0.0.0:8080 RUNNABLE
+                                      qtp984213526-12 Selector0 RUNNABLE
+                                                qtp984213526-13 TIMED_WAITING
+                                                qtp984213526-14 TIMED_WAITING
+                                                qtp984213526-15 TIMED_WAITING
+*                                               qtp984213526-16 RUNNABLE
+                                                qtp984213526-17 TIMED_WAITING
+                                                qtp984213526-18 TIMED_WAITING
+                                                  DestroyJavaVM RUNNABLE

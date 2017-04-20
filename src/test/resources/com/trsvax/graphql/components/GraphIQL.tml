@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+    <div id="graphiql">Loading...</div>
+    
+        <script src="/graphql/js/start.js"></script>
+
+</html>

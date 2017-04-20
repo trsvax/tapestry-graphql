@@ -31,7 +31,7 @@ public class GraphQLServiceTerminator implements GraphQLService, GraphQLReloadSe
 
 	@Override
 	public ExecutionResult execute(String query) {
-		logger.info("query ",query);
+		logger.info("query {} ",query);
 		if ( reload ) {
 			graphQL = new GraphQL(graphQLQueryService.getSchema());
 			reload = false;

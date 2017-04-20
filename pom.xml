@@ -53,6 +53,12 @@
 will fail, preventing Maven from packaging the WAR. Tapestry includes a large number
 of testing facilities designed for use with TestNG (http://testng.org/), so it's recommended. -->
 
+
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>1.7.2</version>
+		</dependency>
 <!--  
         <dependency>
             <groupId>org.testng</groupId>
@@ -72,7 +78,6 @@ of testing facilities designed for use with TestNG (http://testng.org/), so it's
             <groupId>org.apache.tapestry</groupId>
             <artifactId>tapestry-test</artifactId>
             <version>${tapestry-release-version}</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- Provided by the servlet container, but sometimes referenced in the application
@@ -312,7 +317,7 @@ of testing facilities designed for use with TestNG (http://testng.org/), so it's
 -->
 
     <properties>
-        <tapestry-release-version>5.4.0</tapestry-release-version>
+        <tapestry-release-version>5.4.1</tapestry-release-version>
         <servlet-api-release-version>2.5</servlet-api-release-version>
         <testng-release-version>5.14.9</testng-release-version>
         <easymock-release-version>3.0</easymock-release-version>

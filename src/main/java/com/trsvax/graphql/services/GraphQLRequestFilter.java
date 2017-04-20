@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.ioc.annotations.Symbol;
+import org.apache.tapestry5.json.JSONObject;
 import org.apache.tapestry5.services.HttpServletRequestFilter;
 import org.apache.tapestry5.services.HttpServletRequestHandler;
 
@@ -69,7 +70,8 @@ public class GraphQLRequestFilter implements HttpServletRequestFilter {
 				while ((length = request.getInputStream().read(buffer)) != -1) {
 				    result.write(buffer, 0, length);
 				}
-				return result.toString("UTF-8");
+				 
+				return (String) new JSONObject(result.toString("UTF-8")).get("query");
 			} else {
 				return "";
 			}

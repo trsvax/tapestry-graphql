@@ -1,5 +1,5 @@
 package com.trsvax.graphql.pages;
 
-public class Index {
+public class GraphiQL {
 
 }
