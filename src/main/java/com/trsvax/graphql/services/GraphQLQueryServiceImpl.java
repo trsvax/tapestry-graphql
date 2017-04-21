@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 import graphql.schema.GraphQLFieldDefinition;
-import graphql.schema.GraphQLObjectType;
 import graphql.schema.GraphQLObjectType.Builder;
 import graphql.schema.GraphQLSchema;
 

@@ -9,7 +9,6 @@ import java.util.List;
 
 import org.apache.tapestry5.ioc.annotations.EagerLoad;
 import org.apache.tapestry5.ioc.annotations.PostInjection;
-import org.apache.tapestry5.ioc.services.ServiceActivity;
 import org.apache.tapestry5.ioc.services.ServiceActivityScoreboard;
 
 import graphql.schema.DataFetcher;
@@ -29,7 +28,6 @@ public class TapestryQuery implements GraphQLContributeQuery {
 			ServiceActivityScoreboard scoreboard) {
 		graphQLQueryService.addFields(this, fields());
 		this.scoreboard = scoreboard;
-		ServiceActivity activity;
 	}
 	
 	@PostInjection
@@ -71,8 +69,6 @@ public class TapestryQuery implements GraphQLContributeQuery {
 				.field(newFieldDefinition().type(GraphQLString).name("serviceId"))
 				.field(newFieldDefinition().type(GraphQLString).name("scope"))
 				.field(newFieldDefinition().type(GraphQLString).name("status"))
-
-
 				.build();
 	}
 	
