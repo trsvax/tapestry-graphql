@@ -1,4 +1,7 @@
 
+No Longer maintained moving to node/graphql/react
+---
+
 Start of Tapestry GraphQL integration
 
 There are four parts
